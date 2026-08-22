@@ -45,7 +45,7 @@ function findChromium() {
   return candidates[0];
 }
 
-function waitForServer(url, timeoutMs = 15000) {
+function waitForServer(url, timeoutMs = 30000) {
   const start = Date.now();
   return new Promise((resolve, reject) => {
     const probe = () => {
@@ -59,7 +59,7 @@ function waitForServer(url, timeoutMs = 15000) {
 
 const PORT = 4173 + Math.floor(Math.random() * 500);
 const BASE = `http://127.0.0.1:${PORT}/`;
-const server = spawn('npx', ['vite', 'preview', '--port', String(PORT), '--strictPort'], {
+const server = spawn('npx', ['vite', 'preview', '--port', String(PORT), '--strictPort', '--host', '127.0.0.1'], {
   cwd: root,
   stdio: 'ignore',
 });
