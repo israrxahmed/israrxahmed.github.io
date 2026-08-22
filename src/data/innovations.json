@@ -1,0 +1,74 @@
+{
+  "innovations": [
+    {
+      "icon": "Cable",
+      "title": "Cable Length Estimation Tool",
+      "metric": "70%",
+      "metricLabel": "Productivity Improvement",
+      "description": "Automated cable routing and length calculation system that eliminates manual estimation errors and reduces engineering time.",
+      "color": "cyan"
+    },
+    {
+      "icon": "Lightbulb",
+      "title": "Lighting BOM Automation",
+      "metric": "40%",
+      "metricLabel": "Efficiency Gain",
+      "description": "Intelligent bill of materials generator for lighting systems with automatic fixture selection and quantity optimization.",
+      "color": "violet"
+    },
+    {
+      "icon": "Shield",
+      "title": "Earthing BOM Automation",
+      "metric": "50%",
+      "metricLabel": "Efficiency Gain",
+      "description": "Comprehensive earthing system material calculator with automated grounding grid component selection.",
+      "color": "cyan"
+    },
+    {
+      "icon": "History",
+      "title": "Load Change History Tracker",
+      "metric": "70%",
+      "metricLabel": "Quality Check Improvement",
+      "description": "Version control system for electrical load data that tracks changes and ensures design integrity throughout project lifecycle.",
+      "color": "violet"
+    },
+    {
+      "icon": "FolderOpen",
+      "title": "File Indexing Automation",
+      "metric": "30%",
+      "metricLabel": "Reduction in File Handling Time",
+      "description": "Smart document management system that automatically organizes and indexes engineering deliverables.",
+      "color": "cyan"
+    },
+    {
+      "icon": "CalendarCheck",
+      "title": "Daily Work Planning System",
+      "metric": "30%",
+      "metricLabel": "Improvement in Work Output",
+      "description": "Task management and scheduling tool optimized for engineering workflows with priority-based allocation.",
+      "color": "violet"
+    }
+  ],
+  "overallStats": [
+    {
+      "icon": "Zap",
+      "value": "6",
+      "label": "Automation Tools"
+    },
+    {
+      "icon": "TrendingUp",
+      "value": "48%",
+      "label": "Avg. Efficiency Gain"
+    },
+    {
+      "icon": "CalendarCheck",
+      "value": "1000+",
+      "label": "Hours Saved Annually"
+    },
+    {
+      "icon": "Award",
+      "value": "99%",
+      "label": "Accuracy Rate"
+    }
+  ]
+}

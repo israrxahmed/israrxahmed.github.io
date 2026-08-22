@@ -1,0 +1,33 @@
+{
+  "clients": [
+    { "name": "Tecnimont", "country": "Italy" },
+    { "name": "Samsung E&C", "country": "South Korea" },
+    { "name": "GS E&C", "country": "South Korea" },
+    { "name": "Hyundai E&C", "country": "South Korea" },
+    { "name": "Daewoo E&C", "country": "South Korea" },
+    { "name": "SK E&C", "country": "South Korea" },
+    { "name": "ADCO", "country": "UAE" },
+    { "name": "KNPC", "country": "Kuwait" },
+    { "name": "Zhaikmunai", "country": "Kazakhstan" },
+    { "name": "Uzbekneftegaz", "country": "Uzbekistan" },
+    { "name": "Thai Oil", "country": "Thailand" },
+    { "name": "IOCL", "country": "India" }
+  ],
+  "testimonials": [
+    {
+      "quote": "Israr's technical expertise in electrical engineering and his ability to coordinate across disciplines made him an invaluable asset.",
+      "author": "Project Manager",
+      "company": "Major EPC Contractor"
+    },
+    {
+      "quote": "His automation tools significantly improved our engineering efficiency.",
+      "author": "Engineering Director",
+      "company": "International Oil & Gas Company"
+    },
+    {
+      "quote": "Exceptional knowledge of EPC execution from FEED through commissioning.",
+      "author": "Technical Manager",
+      "company": "Global Petrochemical Firm"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Israr Ahmed",
+  "initials": "IA",
+  "designation": "Principal Engineer",
+  "hero": {
+    "headline": "Engineering Milestones",
+    "subHeadline": "A selection of major EPC projects spanning refinery, gas processing, power and pipeline sectors.",
+    "badgeTexts": ["EPC", "FEED", "PROPOSAL"],
+    "tagline": "Principal Electrical Engineer",
+    "description": "Delivering electrical engineering leadership across refinery, petrochemical, gas, and power EPC projects with 19+ years of proposal, FEED, and detailed engineering expertise.",
+    "summary": "Senior EPC electrical engineer specializing in technical governance, multidisciplinary coordination, and engineering automation."
+  },
+  "about": {
+    "description": "Principal Electrical Engineer with over 19 years of experience delivering proposal, FEED, and detail engineering for refinery, petrochemical, gas processing, and power sector projects.",
+    "extendedDescription": "Extensive EPC lifecycle exposure from bid engineering through commissioning support. Known for engineering leadership, vendor coordination, and structured execution. Developer of productivity automation tools improving engineering efficiency and accuracy.",
+    "quote": "Engineering excellence is not just about technical precision—it's about delivering solutions that stand the test of time."
+  },
+  "achievements": [
+    {
+      "icon": "Globe",
+      "title": "Global EPC Leadership",
+      "description": "Led electrical engineering execution across global EPC projects"
+    },
+    {
+      "icon": "Zap",
+      "title": "Automation Excellence",
+      "description": "Delivered automation tools achieving measurable productivity gains"
+    },
+    {
+      "icon": "Users",
+      "title": "Multidisciplinary Coordination",
+      "description": "Managed multidisciplinary coordination and vendor interface"
+    },
+    {
+      "icon": "Award",
+      "title": "Full Lifecycle Support",
+      "description": "Supported construction and commissioning engineering phases"
+    }
+  ],
+  "stats": {
+    "yearsExperience": 19,
+    "projects": 30,
+    "countries": 10
+  },
+  "contact": {
+    "email": "israr.ahmed@email.com",
+    "linkedin": "https://linkedin.com/in/israrahmed",
+    "location": "Available Worldwide",
+    "availabilityStatus": "Available for Opportunities",
+    "availabilityDescription": "Currently open to senior electrical engineering roles in EPC and PMC projects worldwide. Specializing in refinery, petrochemical, gas, and power sectors.",
+    "responseNote": "Typically responds within 24 hours"
+  }
+}

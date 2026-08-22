@@ -1,0 +1,146 @@
+{
+  "categories": [
+    {
+      "value": "all",
+      "label": "All Projects"
+    },
+    {
+      "value": "refinery",
+      "label": "Refinery"
+    },
+    {
+      "value": "gas",
+      "label": "Gas Processing"
+    },
+    {
+      "value": "power",
+      "label": "Power"
+    },
+    {
+      "value": "pipeline",
+      "label": "Pipeline"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "Shurtan Gas Chemical Complex",
+      "location": "Uzbekistan",
+      "category": "gas",
+      "image": "/project-shurtan.jpg",
+      "role": "Lead Electrical Engineer",
+      "scope": [
+        "Load analysis",
+        "Cable sizing",
+        "Equipment specification",
+        "Vendor coordination"
+      ],
+      "description": "Major gas chemical complex development involving comprehensive electrical engineering design and implementation."
+    },
+    {
+      "id": 2,
+      "name": "Thai Oil CFP",
+      "location": "Thailand",
+      "category": "refinery",
+      "image": "/project-thai-oil.jpg",
+      "role": "Senior Electrical Engineer",
+      "scope": [
+        "FEED engineering",
+        "Detail engineering",
+        "Hazardous area classification",
+        "Lighting design"
+      ],
+      "description": "Clean Fuel Project for Thai Oil refinery focusing on environmental compliance and modernized processing capabilities."
+    },
+    {
+      "id": 3,
+      "name": "Paradip Refinery",
+      "location": "India",
+      "category": "refinery",
+      "image": "/project-paradip.jpg",
+      "role": "Electrical Engineer",
+      "scope": [
+        "Power distribution",
+        "Motor control centers",
+        "Earthing system",
+        "Cable routing"
+      ],
+      "description": "Coastal refinery project featuring advanced processing units and environmental controls."
+    },
+    {
+      "id": 4,
+      "name": "Illam Refinery",
+      "location": "Iran",
+      "category": "refinery",
+      "image": "/project-illam.jpg",
+      "role": "Electrical Design Lead",
+      "scope": [
+        "Single line diagrams",
+        "Protection coordination",
+        "Transformer sizing",
+        "Bus duct design"
+      ],
+      "description": "Desert refinery development with comprehensive electrical infrastructure design."
+    },
+    {
+      "id": 5,
+      "name": "Bab Habshan-1",
+      "location": "ADCO, UAE",
+      "category": "gas",
+      "image": "/project-bab-habshan.jpg",
+      "role": "Principal Electrical Engineer",
+      "scope": [
+        "Gas processing electrical",
+        "Substation design",
+        "Power system studies",
+        "Commissioning support"
+      ],
+      "description": "Onshore gas processing facility involving complex electrical systems for gas treatment and compression."
+    },
+    {
+      "id": 6,
+      "name": "CGTP-3",
+      "location": "Zhaikmunai, Kazakhstan",
+      "category": "gas",
+      "image": "/project-cgtp3.jpg",
+      "role": "Lead Electrical Engineer",
+      "scope": [
+        "Gas treatment plant",
+        "Electrical load list",
+        "Cable schedule",
+        "Vendor document review"
+      ],
+      "description": "Condensate Gas Treatment Plant designed for extreme winter conditions."
+    },
+    {
+      "id": 7,
+      "name": "Elm Road Generating Station",
+      "location": "Wisconsin, USA",
+      "category": "power",
+      "image": "/project-elm-road.jpg",
+      "role": "Electrical Engineer",
+      "scope": [
+        "2x615 MW units",
+        "Generator protection",
+        "Switchyard design",
+        "Control systems"
+      ],
+      "description": "Major coal-fired power plant expansion with two 615 MW generating units."
+    },
+    {
+      "id": 8,
+      "name": "KNPC Fuel Gas & Gas Oil Pipeline",
+      "location": "Kuwait",
+      "category": "pipeline",
+      "image": "/project-knpc.jpg",
+      "role": "Electrical Sr. Engineer",
+      "scope": [
+        "Pipeline electrical",
+        "Pump stations",
+        "Cathodic protection",
+        "SCADA integration"
+      ],
+      "description": "Extensive pipeline network for fuel gas and gas oil transportation across Kuwait."
+    }
+  ]
+}

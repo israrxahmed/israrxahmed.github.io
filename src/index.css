@@ -1,0 +1,846 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ========================================
+       DARK THEME - Premium Void Aesthetic
+       ======================================== */
+    
+    /* Background Scale */
+    --bg-primary: 240 20% 2%;         /* Deepest void */
+    --bg-secondary: 240 15% 4%;       /* Slightly elevated */
+    --bg-tertiary: 240 12% 6%;        /* Card backgrounds */
+    --bg-elevated: 240 10% 8%;        /* Elevated surfaces */
+    
+    /* Foreground/Text Scale */
+    --fg-primary: 0 0% 98%;           /* Primary text */
+    --fg-secondary: 240 5% 75%;       /* Secondary text */
+    --fg-tertiary: 240 5% 55%;        /* Tertiary/muted */
+    --fg-disabled: 240 5% 35%;        /* Disabled state */
+    
+    /* Primary Accent - Cyan */
+    --primary: 183 100% 50%;
+    --primary-light: 183 100% 60%;
+    --primary-dark: 183 100% 40%;
+    --primary-fg: 240 20% 2%;
+    
+    /* Secondary Accent - Violet */
+    --secondary: 263 100% 50%;
+    --secondary-light: 263 100% 60%;
+    --secondary-dark: 263 100% 40%;
+    --secondary-fg: 0 0% 98%;
+    
+    /* Semantic Colors */
+    --success: 142 76% 36%;
+    --success-light: 142 76% 46%;
+    --warning: 38 92% 50%;
+    --warning-light: 38 92% 60%;
+    --error: 0 84% 60%;
+    --error-light: 0 84% 70%;
+    --info: 217 91% 60%;
+    
+    /* Surface Colors */
+    --surface: 240 10% 6%;
+    --surface-elevated: 240 8% 10%;
+    --surface-floating: 240 6% 14%;
+    
+    /* Border & Divider */
+    --border-subtle: 240 6% 18%;
+    --border-default: 240 6% 22%;
+    --border-strong: 240 6% 28%;
+    
+    /* Input Fields */
+    --input-bg: 240 8% 10%;
+    --input-border: 240 6% 20%;
+    --input-focus: 183 100% 50%;
+    
+    /* Ring/Focus */
+    --ring: 183 100% 50%;
+    --ring-offset: 240 20% 2%;
+    
+    /* Radius */
+    --radius: 0.75rem;
+    --radius-sm: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    
+    /* Legacy support */
+    --background: var(--bg-primary);
+    --foreground: var(--fg-primary);
+    --card: var(--surface);
+    --card-foreground: var(--fg-primary);
+    --popover: var(--surface);
+    --popover-foreground: var(--fg-primary);
+    --muted: 240 6% 12%;
+    --muted-foreground: var(--fg-tertiary);
+    --accent: var(--primary);
+    --accent-foreground: var(--primary-fg);
+    --destructive: var(--error);
+    --destructive-foreground: 0 0% 98%;
+    --border: var(--border-default);
+    --input: var(--input-border);
+    
+    /* Custom Color Variables */
+    --cyan: #00F0FF;
+    --cyan-light: #33F6FF;
+    --cyan-dark: #00C0CC;
+    --violet: #7000FF;
+    --violet-light: #8733FF;
+    --violet-dark: #5A00CC;
+    --void: #050507;
+    --void-light: #0a0a0f;
+    --surface-solid: #111114;
+    --surface-border: #2A2A30;
+
+    /* RGB channel triplets for Tailwind alpha utilities (<alpha-value>) */
+    --cyan-rgb: 0 240 255;
+    --violet-rgb: 112 0 255;
+    
+    /* ========================================
+       SPACING SCALE (8px base)
+       ======================================== */
+    --space-0: 0;
+    --space-1: 0.25rem;   /* 4px */
+    --space-2: 0.5rem;    /* 8px */
+    --space-3: 0.75rem;   /* 12px */
+    --space-4: 1rem;      /* 16px */
+    --space-5: 1.25rem;   /* 20px */
+    --space-6: 1.5rem;    /* 24px */
+    --space-8: 2rem;      /* 32px */
+    --space-10: 2.5rem;   /* 40px */
+    --space-12: 3rem;     /* 48px */
+    --space-16: 4rem;     /* 64px */
+    --space-20: 5rem;     /* 80px */
+    --space-24: 6rem;     /* 96px */
+    --space-32: 8rem;     /* 128px */
+    
+    /* ========================================
+       TYPOGRAPHY SCALE (Major Third - 1.25)
+       ======================================== */
+    --text-xs: 0.75rem;    /* 12px */
+    --text-sm: 0.875rem;   /* 14px */
+    --text-base: 1rem;     /* 16px */
+    --text-lg: 1.125rem;   /* 18px */
+    --text-xl: 1.25rem;    /* 20px */
+    --text-2xl: 1.5rem;    /* 24px */
+    --text-3xl: 1.875rem;  /* 30px */
+    --text-4xl: 2.25rem;   /* 36px */
+    --text-5xl: 3rem;      /* 48px */
+    --text-6xl: 3.75rem;   /* 60px */
+    --text-7xl: 4.5rem;    /* 72px */
+    
+    /* ========================================
+       ANIMATION TOKENS
+       ======================================== */
+    /* Easing Functions */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+    --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ease-in-out-sine: cubic-bezier(0.37, 0, 0.63, 1);
+    --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    /* Duration Scale */
+    --duration-instant: 150ms;
+    --duration-fast: 200ms;
+    --duration-normal: 300ms;
+    --duration-slow: 500ms;
+    --duration-slower: 700ms;
+    --duration-slowest: 1000ms;
+    
+    /* Stagger Delays */
+    --stagger-fast: 50ms;
+    --stagger-normal: 100ms;
+    --stagger-slow: 150ms;
+    
+    /* ========================================
+       ELEVATION/DEPTH SYSTEM
+       ======================================== */
+    /* Glass Surfaces */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-bg-hover: rgba(255, 255, 255, 0.06);
+    --glass-bg-active: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-border-strong: rgba(255, 255, 255, 0.12);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.25);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.35);
+    --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.4);
+    
+    /* Glow Effects */
+    --glow-cyan: 0 0 20px rgba(0, 240, 255, 0.3);
+    --glow-cyan-lg: 0 0 40px rgba(0, 240, 255, 0.25);
+    --glow-violet: 0 0 20px rgba(112, 0, 255, 0.3);
+    --glow-violet-lg: 0 0 40px rgba(112, 0, 255, 0.25);
+    --glow-mixed: 0 0 30px rgba(0, 240, 255, 0.2), 0 0 60px rgba(112, 0, 255, 0.15);
+  }
+
+  /* ========================================
+     LIGHT THEME - Clean Premium Aesthetic
+     ======================================== */
+  html:not(.dark) {
+    /* Background Scale */
+    --bg-primary: 0 0% 98%;           /* Soft white */
+    --bg-secondary: 0 0% 96%;         /* Slightly warm */
+    --bg-tertiary: 0 0% 100%;         /* Pure white */
+    --bg-elevated: 0 0% 100%;         /* Cards */
+    
+    /* Foreground/Text Scale */
+    --fg-primary: 240 10% 10%;        /* Near black */
+    --fg-secondary: 240 5% 30%;       /* Dark gray */
+    --fg-tertiary: 240 5% 45%;        /* Medium gray */
+    --fg-disabled: 240 5% 60%;        /* Light gray */
+    
+    /* Primary Accent - Adjusted for light */
+    --primary: 263 100% 50%;          /* Violet as primary */
+    --primary-light: 263 100% 60%;
+    --primary-dark: 263 100% 40%;
+    --primary-fg: 0 0% 100%;
+    
+    /* Secondary Accent */
+    --secondary: 183 100% 40%;
+    --secondary-light: 183 100% 50%;
+    --secondary-dark: 183 100% 30%;
+    --secondary-fg: 240 10% 10%;
+    
+    /* Surface Colors */
+    --surface: 0 0% 100%;
+    --surface-elevated: 0 0% 100%;
+    --surface-floating: 240 5% 98%;
+    
+    /* Border & Divider */
+    --border-subtle: 240 5% 90%;
+    --border-default: 240 5% 85%;
+    --border-strong: 240 5% 75%;
+    
+    /* Input Fields */
+    --input-bg: 0 0% 100%;
+    --input-border: 240 5% 85%;
+    --input-focus: 263 100% 50%;
+    
+    /* Ring/Focus */
+    --ring: 263 100% 50%;
+    --ring-offset: 0 0% 98%;
+    
+    /* Legacy support */
+    --background: var(--bg-primary);
+    --foreground: var(--fg-primary);
+    --card: var(--surface);
+    --card-foreground: var(--fg-primary);
+    --popover: var(--surface);
+    --popover-foreground: var(--fg-primary);
+    --muted: 240 5% 92%;
+    --muted-foreground: var(--fg-tertiary);
+    --accent: var(--primary);
+    --accent-foreground: var(--primary-fg);
+    --destructive: var(--error);
+    --destructive-foreground: 0 0% 100%;
+    --border: var(--border-default);
+    --input: var(--input-border);
+    
+    /* Custom Color Variables */
+    --cyan: #00B8C4;                  /* Darker cyan for light mode */
+    --cyan-light: #00D4E0;
+    --cyan-dark: #009BA5;
+    --violet: #6200EA;
+    --violet-light: #7C4DFF;
+    --violet-dark: #4A00B5;
+    --void: #f8f8fa;
+    --void-light: #ffffff;
+    --surface-solid: #ffffff;
+    --surface-border: #E5E5EA;
+
+    /* RGB channel triplets for Tailwind alpha utilities (<alpha-value>) */
+    --cyan-rgb: 0 184 196;
+    --violet-rgb: 98 0 234;
+    
+    /* Glass Surfaces - Darker for visibility */
+    --glass-bg: rgba(0, 0, 0, 0.02);
+    --glass-bg-hover: rgba(0, 0, 0, 0.04);
+    --glass-bg-active: rgba(0, 0, 0, 0.06);
+    --glass-border: rgba(0, 0, 0, 0.06);
+    --glass-border-strong: rgba(0, 0, 0, 0.1);
+    
+    /* Shadows - Softer for light */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.08);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+    --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.12);
+    
+    /* Glow Effects - Subtler for light */
+    --glow-cyan: 0 0 20px rgba(0, 184, 196, 0.2);
+    --glow-cyan-lg: 0 0 40px rgba(0, 184, 196, 0.15);
+    --glow-violet: 0 0 20px rgba(98, 0, 234, 0.2);
+    --glow-violet-lg: 0 0 40px rgba(98, 0, 234, 0.15);
+    --glow-mixed: 0 0 30px rgba(98, 0, 234, 0.15), 0 0 60px rgba(0, 184, 196, 0.1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html.dark {
+    color-scheme: dark;
+  }
+  
+  html:not(.dark) {
+    color-scheme: light;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  
+  code, pre, .mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  /* Smooth theme transitions — scoped to visible surfaces instead of every
+     element (a global * rule forced style recalculation across the whole
+     document on every state change). */
+  body,
+  header,
+  footer,
+  section,
+  a,
+  button,
+  input,
+  textarea,
+  .glass-card,
+  .glass-elevated,
+  .glass-floating,
+  .btn-primary,
+  .btn-secondary {
+    transition: background-color var(--duration-fast) var(--ease-out-quart),
+                border-color var(--duration-fast) var(--ease-out-quart),
+                color var(--duration-fast) var(--ease-out-quart),
+                box-shadow var(--duration-fast) var(--ease-out-quart);
+  }
+}
+
+@layer components {
+  /* ========================================
+     GLASSMORPHISM COMPONENTS
+     ======================================== */
+  
+  /* Base Glass Card - Surface level */
+  .glass-card {
+    @apply backdrop-blur-xl;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--duration-normal) var(--ease-out-back),
+                box-shadow var(--duration-normal) var(--ease-out-quart),
+                background var(--duration-fast) var(--ease-out-quart);
+  }
+  
+  .glass-card:hover {
+    background: var(--glass-bg-hover);
+    border-color: var(--glass-border-strong);
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-2px);
+  }
+  
+  .glass-card:active {
+    background: var(--glass-bg-active);
+    transform: translateY(0);
+    box-shadow: var(--shadow-md);
+  }
+  
+  /* Elevated Glass - Higher layer */
+  .glass-elevated {
+    @apply backdrop-blur-2xl;
+    background: var(--glass-bg-hover);
+    border: 1px solid var(--glass-border-strong);
+    box-shadow: var(--shadow-xl), var(--glow-cyan);
+  }
+  
+  /* Floating Glass - Highest layer */
+  .glass-floating {
+    @apply backdrop-blur-2xl;
+    background: var(--glass-bg-active);
+    border: 1px solid var(--glass-border-strong);
+    box-shadow: var(--shadow-2xl), var(--glow-mixed);
+  }
+  
+  /* Glass with Gradient Border */
+  .glass-gradient-border {
+    position: relative;
+    background: var(--glass-bg);
+    border-radius: var(--radius-lg);
+  }
+  
+  .glass-gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, var(--cyan), var(--violet));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.5;
+    transition: opacity var(--duration-normal) var(--ease-out-quart);
+  }
+  
+  .glass-gradient-border:hover::before {
+    opacity: 1;
+  }
+  
+  /* ========================================
+     TYPOGRAPHY UTILITIES
+     ======================================== */
+  
+  .text-gradient {
+    background: linear-gradient(135deg, var(--cyan), var(--violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-shine {
+    background: linear-gradient(
+      135deg,
+      var(--cyan) 0%,
+      var(--violet) 25%,
+      var(--cyan-light) 50%,
+      var(--violet) 75%,
+      var(--cyan) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shine 3s linear infinite;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* ========================================
+     GLOW EFFECTS
+     ======================================== */
+  
+  .glow-cyan {
+    box-shadow: var(--glow-cyan);
+  }
+  
+  .glow-cyan-lg {
+    box-shadow: var(--glow-cyan-lg);
+  }
+  
+  .glow-violet {
+    box-shadow: var(--glow-violet);
+  }
+  
+  .glow-violet-lg {
+    box-shadow: var(--glow-violet-lg);
+  }
+  
+  .glow-mixed {
+    box-shadow: var(--glow-mixed);
+  }
+  
+  .hover\:glow-cyan:hover {
+    box-shadow: var(--glow-cyan);
+  }
+  
+  .hover\:glow-violet:hover {
+    box-shadow: var(--glow-violet);
+  }
+  
+  /* ========================================
+     BUTTON STYLES
+     ======================================== */
+  
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 px-6 py-3;
+    background: linear-gradient(135deg, var(--cyan), var(--violet));
+    color: white;
+    font-weight: 600;
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform var(--duration-fast) var(--ease-out-back),
+                box-shadow var(--duration-normal) var(--ease-out-quart);
+  }
+  
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--cyan-light), var(--violet-light));
+    opacity: 0;
+    transition: opacity var(--duration-normal) var(--ease-out-quart);
+  }
+  
+  .btn-primary:hover {
+    transform: scale(1.02);
+    box-shadow: var(--glow-mixed);
+  }
+  
+  .btn-primary:hover::before {
+    opacity: 1;
+  }
+  
+  .btn-primary:active {
+    transform: scale(0.98);
+  }
+  
+  .btn-primary > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--fg-primary);
+    font-weight: 600;
+    border-radius: var(--radius);
+    transition: all var(--duration-fast) var(--ease-out-quart);
+  }
+  
+  .btn-secondary:hover {
+    background: var(--glass-bg-hover);
+    border-color: var(--glass-border-strong);
+    transform: translateY(-1px);
+  }
+  
+  .btn-secondary:active {
+    transform: translateY(0);
+    background: var(--glass-bg-active);
+  }
+  
+  /* ========================================
+     LAYOUT UTILITIES
+     ======================================== */
+  
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-wide {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  /* ========================================
+     SKILL BAR
+     ======================================== */
+  
+  .skill-bar {
+    @apply h-2 rounded-full overflow-hidden;
+    background: hsl(var(--muted));
+  }
+  
+  .skill-bar-fill {
+    @apply h-full rounded-full;
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--secondary)));
+    box-shadow: var(--glow-cyan);
+  }
+  
+  /* ========================================
+     NAVIGATION STYLES
+     ======================================== */
+  
+  .nav-link {
+    @apply relative px-4 py-2 text-sm font-medium rounded-lg;
+    color: hsl(var(--fg-secondary));
+    transition: color var(--duration-fast) var(--ease-out-quart);
+  }
+  
+  .nav-link:hover {
+    color: hsl(var(--fg-primary));
+    background: var(--glass-bg);
+  }
+  
+  .nav-link.active {
+    color: hsl(var(--primary));
+  }
+  
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: hsl(var(--primary));
+  }
+}
+
+@layer utilities {
+  /* ========================================
+     ANIMATION UTILITIES
+     ======================================== */
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float-slow {
+    animation: float 8s ease-in-out infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-glow {
+    animation: glow-pulse 2s ease-in-out infinite alternate;
+  }
+  
+  .animate-shine {
+    animation: shine 3s linear infinite;
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.6s var(--ease-out-expo) forwards;
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.5s var(--ease-out-quart) forwards;
+  }
+  
+  .animate-scale-in {
+    animation: scale-in 0.4s var(--ease-out-back) forwards;
+  }
+  
+  /* Hover animations */
+  .hover-lift {
+    transition: transform var(--duration-normal) var(--ease-out-back),
+                box-shadow var(--duration-normal) var(--ease-out-quart);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+  }
+  
+  .hover-scale {
+    transition: transform var(--duration-fast) var(--ease-out-back);
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Scrollbar utilities */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--primary)) transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 3px;
+  }
+}
+
+/* ========================================
+   KEYFRAME ANIMATIONS
+   ======================================== */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes glow-pulse {
+  from {
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.6), 0 0 50px rgba(0, 240, 255, 0.4);
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Badge flip animation */
+@keyframes badgeFlip {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.flip-text {
+  animation: badgeFlip 0.6s var(--ease-out-back);
+  transform-style: preserve-3d;
+}
+
+.perspective {
+  perspective: 800px;
+}
+
+/* ========================================
+   CUSTOM SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--bg-primary));
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, hsl(var(--primary)), hsl(var(--secondary)));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
+
+/* ========================================
+   FOCUS STYLES (Accessibility)
+   ======================================== */
+
+:focus-visible {
+  outline: 3px solid hsl(var(--ring));
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Remove focus outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .animate-float,
+  .animate-float-slow,
+  .animate-pulse-slow,
+  .animate-glow,
+  .animate-shine {
+    animation: none !important;
+  }
+}
+
+/* ========================================
+   SELECTION STYLES
+   ======================================== */
+
+::selection {
+  background: hsl(var(--primary) / 0.3);
+  color: hsl(var(--fg-primary));
+}
+
+/* ========================================
+   PLACEHOLDER STYLES
+   ======================================== */
+
+::placeholder {
+  color: hsl(var(--fg-tertiary));
+  opacity: 0.7;
+}

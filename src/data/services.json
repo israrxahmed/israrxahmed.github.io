@@ -1,0 +1,81 @@
+{
+  "services": [
+    {
+      "icon": "FileText",
+      "title": "Proposal & FEED Engineering",
+      "description": "Comprehensive front-end engineering design and proposal development for EPC projects, including technical specifications, cost estimation, and schedule planning.",
+      "features": [
+        "Technical proposals",
+        "FEED documentation",
+        "Cost estimation",
+        "Schedule planning"
+      ]
+    },
+    {
+      "icon": "Settings",
+      "title": "Electrical Design Governance",
+      "description": "Technical leadership and quality assurance for electrical engineering deliverables across all project phases.",
+      "features": [
+        "Design reviews",
+        "Standards compliance",
+        "Quality assurance",
+        "Technical oversight"
+      ]
+    },
+    {
+      "icon": "Users",
+      "title": "Vendor Technical Evaluation",
+      "description": "Expert evaluation of vendor proposals and technical documentation for electrical equipment and systems.",
+      "features": [
+        "Bid evaluation",
+        "Technical queries",
+        "Vendor meetings",
+        "Document review"
+      ]
+    },
+    {
+      "icon": "HardHat",
+      "title": "Construction Engineering Interface",
+      "description": "Seamless coordination between engineering and construction teams to ensure efficient project execution.",
+      "features": [
+        "Site support",
+        "Construction queries",
+        "As-built documentation",
+        "Commissioning support"
+      ]
+    },
+    {
+      "icon": "Cpu",
+      "title": "Automation-Driven Productivity",
+      "description": "Custom automation tools and macros to improve engineering efficiency, accuracy, and consistency.",
+      "features": [
+        "Excel VBA macros",
+        "Automated calculations",
+        "Template development",
+        "Process optimization"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Discovery",
+      "description": "Understand project requirements and scope"
+    },
+    {
+      "step": "02",
+      "title": "Planning",
+      "description": "Develop technical approach and schedule"
+    },
+    {
+      "step": "03",
+      "title": "Execution",
+      "description": "Deliver engineering with quality and precision"
+    },
+    {
+      "step": "04",
+      "title": "Support",
+      "description": "Provide ongoing construction and commissioning support"
+    }
+  ]
+}

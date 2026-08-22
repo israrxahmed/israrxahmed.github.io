@@ -1,0 +1,25 @@
+{
+  "technicalSkills": [
+    { "name": "Load Analysis", "icon": "Zap", "proficiency": 95 },
+    { "name": "Cable Sizing", "icon": "Cable", "proficiency": 98 },
+    { "name": "Lighting Systems", "icon": "Lightbulb", "proficiency": 92 },
+    { "name": "Earthing Systems", "icon": "Shield", "proficiency": 96 },
+    { "name": "Hazardous Area Layouts", "icon": "AlertTriangle", "proficiency": 90 }
+  ],
+  "epcExecution": [
+    { "name": "Proposal Engineering", "icon": "FileText", "proficiency": 94 },
+    { "name": "FEED Delivery", "icon": "Layers", "proficiency": 96 },
+    { "name": "Detail Engineering Governance", "icon": "Settings", "proficiency": 98 }
+  ],
+  "softwareTools": [
+    "ETAP",
+    "AutoCAD",
+    "SPEL",
+    "MicroStation",
+    "Navisworks",
+    "Dialux",
+    "AGi32",
+    "PDS/PDMS",
+    "Excel VBA"
+  ]
+}

@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Internal audit documentation (kept local only)
+docs/audit/
+
+# Test coverage
+coverage/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+vite.log*
+
+# Editors / IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python bytecode (from repo utility scripts)
+__pycache__/
+*.pyc
